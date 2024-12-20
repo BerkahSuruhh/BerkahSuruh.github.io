@@ -104,31 +104,31 @@
                 </div>
               </div>
               <div class="col-lg-12">
-  <form id="contact-form" onsubmit="sendToWhatsApp(event)">
-    <div class="row">
-      <div class="col-lg-6">
-        <fieldset>
-          <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
-        </fieldset>
-      </div>
-      <div class="col-lg-6">
-        <fieldset>
-          <input type="surname" name="surname" id="surname" placeholder="Your Surname..." autocomplete="on" required>
-        </fieldset>
-      </div>
-      
-      <div class="col-lg-12">
-        <fieldset>
-          <textarea name="message" id="message" placeholder="Your Message"></textarea>
-        </fieldset>
-      </div>
-      <div class="col-lg-12">
-        <fieldset>
-          <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
-        </fieldset>
-      </div>
-    </div>
-  </form>
+                <form id="contact-form" onsubmit="sendToWhatsApp(event)">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="surname" name="surname" id="surname" placeholder="Your Surname..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
       var surname = document.getElementById('surname').value;
       var message = document.getElementById('message').value;
 
-      var fullMessage = `halo, Assalamualaikum, Perkenalkan nama saya ${surname} atau bisa dipanggil ${name}\nMessage: ${message}`;
+      var fullMessage = `Halo , Perkenalkan nama saya ${surname} atau bisa dipanggil ${name}\nMessage: ${message}`;
       
       var whatsappUrl = `https://wa.me/62816693480?text=${encodeURIComponent(fullMessage)}`;
       
